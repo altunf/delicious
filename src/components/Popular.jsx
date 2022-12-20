@@ -40,9 +40,9 @@ function Popular() {
             gap: "5rem",
           }}
         >
-          {popular.map((recipe, index) => {
+          {popular.map((recipe) => {
             return (
-              <SplideSlide key={index}>
+              <SplideSlide key={recipe.id}>
                 <Card>
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
